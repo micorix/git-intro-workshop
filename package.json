@@ -1,7 +1,13 @@
 {
+  "name": "git-introduction-workshop",
+  "version": "1.0.0",
+  "main": "deck.mdx",
+  "repository": "https://github.com/micorix/git-intro-workshop.git",
+  "author": "Michał Oręziak <micorix.dev@gmail.com>",
+  "private": true,
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
+    "build": "mdx-deck build deck.mdx"
   },
   "dependencies": {
     "@emotion/react": "^11.1.3",
