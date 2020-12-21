@@ -1,0 +1,293 @@
+import micorixTheme from './theme';
+import {DeckHeading, FullFrame, GitAreaFlex, Layout, NarrowContainer, RoundedImage} from "./styles";
+export const theme = micorixTheme;
+
+
+<Layout>
+
+<DeckHeading>Git Intro</DeckHeading>
+
+## by micorix
+
+</Layout>
+
+---
+
+<Layout>
+
+## Before we begin
+### Installing git
+[You can download it from here](https://git-scm.com/downloads)
+### Verifying installation
+```shell script
+git --version
+```
+
+</Layout>
+
+---
+
+<Layout>
+
+# What's this talk is about?
+
+<p style={{textAlign: 'center'}}>Version control system</p>
+
+<Steps>
+<ul>
+<li>Keeping track of software version</li>
+<li>Possibility to revert unwanted changes</li>
+    <li>(Easy) Collaboration</li>
+</ul>
+</Steps>
+</Layout>
+
+---
+
+<Layout>
+    <NarrowContainer>
+        <RoundedImage src="https://t3.gstatic.com/images?q=tbn:ANd9GcRBKJlr5ZGQAblcYFrHyERiO3nPgRy7fQtGgvlpi0hIycrQJ3IFtx7Or7sR3LMg" />
+        <h2>Linus Torvalds</h2>
+        <p style={{textAlign: 'center'}}>Creator of git & linux kernel maintainer</p>
+        <Steps>
+            <blockquote>
+                You can disagree with me as much
+                as you want, but during
+                this talk, by
+                definition <strong>
+                anybody
+                who disagrees is
+                stupid and ugly. </strong>
+                So keep that in mind.
+                When I'm done speaking, you can
+                go on with their lives.
+            </blockquote>
+        </Steps>
+    </NarrowContainer>
+
+</Layout>
+
+---
+
+<Layout>
+
+# WTH is git?
+
+<Steps>
+<p>Git is <strong>distributed</strong>, <strong>file-based</strong> version control system</p>
+</Steps>
+</Layout>
+
+---
+
+# See what's under the hood
+<FullFrame src="https://desktop.github.com"></FullFrame>
+
+---
+
+# Unified experience
+<FullFrame src="https://cli.github.com"></FullFrame>
+
+---
+
+<Invert>
+
+<Layout>
+
+# Let's dive in!
+
+</Layout>
+
+</Invert>
+
+---
+
+<Layout>
+
+# Initializing the repo
+```shell script
+git init
+```
+
+</Layout>
+
+---
+
+<Layout>
+
+# Look into the `.git` dir
+
+</Layout>
+
+---
+
+<Layout>
+
+# Snapshots not diffs
+
+</Layout>
+
+---
+
+<Layout>
+
+# Basic objects
+
+* blob
+* tree
+* commit
+
+</Layout>
+
+---
+
+<Layout>
+
+# Branches
+
+<Steps>
+
+Branch as a pointer
+
+</Steps>
+
+</Layout>
+
+---
+
+<Horizontal>
+    <GitAreaFlex bgColor="light" color="primary">Working directory</GitAreaFlex>
+    <GitAreaFlex bgColor="primary" color="light">Staging area</GitAreaFlex>
+    <GitAreaFlex bgColor="secondary" color="light">Repository</GitAreaFlex>
+</Horizontal>
+
+---
+
+<Layout>
+
+# Checking what we have
+
+## Checking whether we have unstaged files
+```shell script
+git status
+```
+## Browsing previous commits
+```shell script
+git log
+```
+</Layout>
+
+---
+
+<Layout>
+
+# Adding files to the staging area
+```shell script
+git add some_file.py another_file.java
+```
+<Steps>
+
+<div>
+
+> You can use *dot* to add all modified files (regex)
+
+```shell script
+git add .
+```
+
+</div>
+
+</Steps>
+
+</Layout>
+
+---
+<Layout>
+
+# Moving, renaming, deleting files
+```shell script
+git mv some_file.py
+```
+```shell script
+git rm some_file.py
+```
+
+<Steps>
+<div>
+
+## How it works under the hood?
+```shell script
+rm some_file.py
+```
+```shell script
+git add some_file.py
+```
+
+</div>
+</Steps>
+</Layout>
+
+---
+
+<Layout>
+
+# Commit & push
+
+```shell script
+git commit -m "My commit message"
+```
+``` shell script
+git push
+```
+
+<Steps>
+<div>
+
+## When pushing for the first time
+```shell script
+git push -u origin my_branch
+```
+* where `my_branch` is usually `master` or `main`.
+
+</div>
+</Steps>
+</Layout>
+
+---
+
+<Layout>
+
+# Other useful commands
+
+```shell script
+git diff
+```
+```shell script
+git merge
+```
+```shell script
+git checkout
+```
+```shell script
+git pull
+```
+
+</Layout>
+
+---
+
+<Layout>
+
+# Additional resources
+
+[You can find them in git-intro-workshop repo](https://github.com/micorix/git-intro-workshop)
+
+</Layout>
+
+---
+
+<Layout>
+
+# Thanks for your attention!
+
+</Layout>

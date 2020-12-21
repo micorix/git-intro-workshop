@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.3",
+    "@emotion/styled": "^11.0.0",
+    "mdx-deck": "^4.1.1",
+    "react-helmet": "^6.1.0"
+  }
+}
